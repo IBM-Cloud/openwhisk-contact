@@ -64,7 +64,26 @@ Built using the IBM Bluemix, the application uses:
       Here is an example of a OpenWhisk API: `https://b4651037-d05a-4b7d-ab46-1e9a1abc096f-gws.api-gw.mybluemix.net/mailAction/api`
     
   10. Done, with that in place, you should be ready to go to host the code on GitHub.
+  11. Commit the code to GitHub
+  12. Create a new branch called gh-pages, GitHub will enable GitHub Pages when "gh-pages" branch is created with all the code.
+      ![](readMe-images/githubFull.png) 
+  
+   **Done, see the running application on GitHub:**  
+   [https://ibm-bluemix.github.io/OpenWhiskContact/](https://ibm-bluemix.github.io/OpenWhiskContact/)
 
+## Code Structure
 
+| File | Description |
+| ---- | ----------- |
+|[**action.js**](OpenWhiskAction/action.js)| Create OpenWhisk using SendGrid |
+|[**requestController.js**](app/controllers/requestController.js)| Angular controller, making a post request to the OpenWhisk endpoint api, passing all the form data. |
 
-------
+## License
+
+See [LICENSE](LICENSE) for license information.
+
+---
+
+This project is a sample application created for the purpose of demonstrating a serverless app with OpenWhisk. The program is provided as-is with no warranties of any kind, express or implied.
+
+[bluemix_signup_url]: https://console.ng.bluemix.net/?cm_mmc=GitHubReadMe
