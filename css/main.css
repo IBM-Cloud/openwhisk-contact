@@ -1,0 +1,336 @@
+body {
+  font-family: "Helvetica Neue for IBM", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Noto Sans", Noto, sans-serif;
+  background-color: fff;
+
+}
+.header-container {
+  padding: 0 4rem;
+}
+
+.header-panel.shadow-z-2 {
+  background-color: #152934;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.full{
+  font-size: 16px;
+  padding: 0;
+}
+
+.logo-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.website_icon{
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  line-height: 56px;
+  font-size: 20px;
+  background-image: url("./static/img/bluemix-logo-2016-feb.svg");
+}
+
+.logo-turner {
+  font-size: 18px;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.row-content{
+  vertical-align: top;
+}
+
+.row-picture {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.row-details {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+
+p.info {
+  color: #fff;
+}
+
+p.info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.full ul,.full ol {
+  margin-left: 12px;
+  background: #f6fbff;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.full img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.social-icons {
+  text-align: right;
+}
+
+.icon {
+  text-align: center;
+  line-height: 24px;
+  font-size: 24px;
+  color: white;
+  display: inline-block;
+  margin-left: 24px;
+}
+
+.icon:hover #bluemix-logo-copy-6 {
+  fill: #5aaafa;
+}
+
+.icon:hover .fa-stack-overflow, .icon:hover .fa-github {
+  color: #5aaafa;
+}
+
+body .container .jumbotron-primary, body .container .well-primary, body .container-fluid .jumbotron-primary, body .container-fluid .well-primary{
+  background-color: #fff;
+}
+
+.page-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  text-align: center;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.menu ul li a:hover, .menu ul li a:focus, li.current-menu-item > a{
+  background: rgba(124,199,255,0.2);
+}
+
+li.current-menu-item:before {
+  content: "";
+  display: inline-block;
+  height: 55px;
+  width: 5px;
+  position: absolute;
+  left: 9px;
+  vertical-align: middle;
+  background: #7cc7ff;
+}
+
+.menu ul li a {
+  font-size: 15px;
+  font-weight: normal;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  padding: 0 0 0 10px;
+  color: #7cc7ff;
+}
+
+.home-subtitle {
+  font-size: 26px;
+  margin-bottom: 32px;
+  margin-top: 5px;
+  color: #01c87b;
+  font-weight: 300;
+}
+
+h2.blog-title-pro{color: #fff;}
+
+h2.blog-title-pro:after {
+  content: "";
+  display: block;
+  width: 104px;
+  height: 4px;
+  margin-top: 16px;
+  margin-left: 1px;
+  background: rgb(90, 170, 250);
+}
+
+.project-link {
+  background-color: transparent;
+  text-decoration: none;
+  float: right;
+  margin-left: 2rem;
+}
+
+.error {
+  color: #EF7272!important;
+  font-size: 12px!important;
+}
+
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgb(238, 239, 242);
+  color: #888;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid rgba(0,0,0,.075);
+}
+
+.header-image {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  width: 65%;
+  display: none;
+}
+
+
+.header-panel.shadow-z-2-filter {
+  background: #ffffff;
+  border-bottom: 1px solid #DFE3E6;
+}
+
+.containerContact{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  margin-top: 60px;
+}
+.contantIn{
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 1px;
+  margin: 0px 0px 1.5em;
+  padding: 1.5em 0.75em;
+  border-top: 5px #5596e6 solid;
+}
+
+.RequestForm input[type="text"], .RequestForm input[type="email"], textarea{
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.0588235) 0px 1px 3px inset;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(222, 222, 222);
+  border-image: initial;
+  border-radius: 3px;
+  padding: 0.5em;
+  transition: border-color 0.2s ease;
+}
+
+.RequestForm input[type="text"], .RequestForm input[type="email"]{
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 16px 18px;
+  background-position: 98% 50%;
+  cursor: auto;
+  margin-bottom: 15px;
+  border-radius: 0px;
+  background: #ebf0f7;
+}
+
+.RequestForm textarea{
+  height: 220px;
+  border-radius: 0px;
+  background: #ebf0f7;
+}
+.subm {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  /* border-radius: 4px; */
+  background: #5596e6;
+  color: white;
+}
+.rowFooter{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+.contactBack a{
+  display: inline-block;
+  padding: 6px 14px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  /* border-radius: 4px; */
+  background: #5596e6;
+  color: white;
+  margin-bottom: 10px;
+}
+.contactBack a:hover{
+  text-decoration: none;
+}
+.contact-title a:hover{
+    text-decoration: none;
+    border: none;
+}
+
+button.ng-isolate-scope{
+  color: #152934;
+  font-size: 15px;
+  background: none;
+  border: none;
+  background: #5aaafa;
+  padding: 10px;
+  color: white;
+}
+
+button.ng-isolate-scope:hover{
+  color: #152934;
+}
+
