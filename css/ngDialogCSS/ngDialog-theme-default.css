@@ -1,0 +1,171 @@
+@keyframes ngdialog-flyin {
+	0% {
+		opacity: 0;
+		transform: translateY(-40px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes ngdialog-flyout {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-40px);
+	}
+}
+
+.ngdialog.ngdialog-theme-default {
+	padding-bottom: 160px;
+	padding-top: 50px;
+}
+
+.ngdialog.ngdialog-theme-default.ngdialog-closing .ngdialog-content {
+	animation: ngdialog-flyout .5s;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-content {
+	animation: ngdialog-flyin .5s;
+	background: #ffffff;
+	color: #444;
+	font-family: 'Helvetica',sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	margin: 0 auto;
+	max-width: 93%;
+	position: relative;
+	width: 450px;
+	border-top: 5px #5596e6 solid;
+}
+.ngdialog-buttons {
+	text-align: right;
+}
+
+
+.ngdialog.ngdialog-theme-default .ngdialog-close {
+	border-radius: 5px;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close:before {
+	background: transparent;
+	border-radius: 3px;
+	color: #bbb;
+	content: '\00D7';
+	font-size: 26px;
+	font-weight: 400;
+	height: 30px;
+	line-height: 26px;
+	position: absolute;
+	right: 3px;
+	text-align: center;
+	top: 3px;
+	width: 30px;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-close:hover:before,.ngdialog.ngdialog-theme-default .ngdialog-close:active:before {
+	color: #777;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-message {
+	margin: 30px;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-input {
+	margin-bottom: 1em;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-input textarea,.ngdialog.ngdialog-theme-default .ngdialog-input input[type="text"],.ngdialog.ngdialog-theme-default .ngdialog-input input[type="password"],.ngdialog.ngdialog-theme-default .ngdialog-input input[type="email"],.ngdialog.ngdialog-theme-default .ngdialog-input input[type="url"] {
+	background: #fff;
+	border: 0;
+	border-radius: 3px;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	margin: 0 0 .25em;
+	min-height: 2.5em;
+	padding: .25em .67em;
+	width: 100%;
+}
+.inputFormPopup{
+	margin: 30px;
+}
+.form-group-popup {
+	padding: 30px;
+	background: #dfe6eb;
+}
+
+.alert-success, .alert-danger{
+	margin-top: 10px;
+}
+.ngdialog.ngdialog-theme-default .ngdialog-input textarea:focus,.ngdialog.ngdialog-theme-default .ngdialog-input input[type="text"]:focus,.ngdialog.ngdialog-theme-default .ngdialog-input input[type="password"]:focus,.ngdialog.ngdialog-theme-default .ngdialog-input input[type="email"]:focus,.ngdialog.ngdialog-theme-default .ngdialog-input input[type="url"]:focus {
+	box-shadow: inset 0 0 0 2px #8dbdf1;
+	outline: none;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-buttons {
+	*zoom: 1;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-buttons:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	/* border-radius: 4px; */
+	background: #5596e6;
+	color: white;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button:focus {
+	animation: ngdialog-pulse 1.1s infinite;
+	outline: none;
+}
+
+@media (max-width: 568px) {
+	.ngdialog.ngdialog-theme-default .ngdialog-button:focus {
+		animation: none;
+	}
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button.ngdialog-button-primary {
+	background: #3288e6;
+	color: #fff;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-button.ngdialog-button-cancel {
+	background: none;
+	color: #64717b;
+	border: 2px solid #64717b;
+	margin-right: 10px;
+}
