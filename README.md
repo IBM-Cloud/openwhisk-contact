@@ -1,23 +1,26 @@
 # Process forms with OpenWhisk
-The OpenWhiskContact is a simple Angular.js app processing a form data, this demo will demonstrates how forms can be processed without the need of having a backend using the [IBM OpenWhisk](http://openwhisk.org/) Serverless architecture. 
-The UI is done using Angular.js with some out of the box features where can simply added to any project. 
-There is no backend, all we have is a simple OpenWhisk Action that process the form. 
-The OpenWhisk Action is then exposed as a Rest api to allow the Angular app to make a post request to. 
+The OpenWhiskContact application is a simple Angular.js form processing app, it demonstrates how a form can be processed without the need of any backend, this is by using the [IBM OpenWhisk](http://openwhisk.org/) Serverless architecture. 
+
+The UI is done using Angular.js, the Angular UI comes with some cool features that can be reused like popups, messages, and validations. The Angular app is responsible for taken the user data from the simple form, then make a POST request to the OpenWhisk API on Bluemix. With using OpenWhisk, we created a simple action where it takes the user data passed and then sent the email using SendGrid mail client. The OpenWhisk action is then exposed as a RESTful API to allow the Angular app to talk too. With OpenWhisk you can easily create actions that handle individual or multiple tasks and then expose it as a RESTful API. 
+
+
 ![](./readMe-images/app.png)  
 
 
-For most Angular or React applications where most of the work been done on the client side but still you would need backend to preform some tasks such as processing a form, by using OpenWhisk you can go fully Serverless without the need of Backend management, simple create your Action and expose it as an API and use it in your frontend application.  
-A good example of this, would be the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) site where form processing is needed while the site is hosted on GitHub pages which means no access to backend.
-The [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) site is a well-maintained, centralized, curated collection of open sample applications built using Bluemix and Bluemix services.
-The source code for this example is taken from the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) site.
+For many JavaScript heavy applications, OpenWhisk can be super efficient and beneficial to use, a good example of this would be the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) page.  The [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) page is a simple Angular app hosted on GitHub where there is no access to the backend, in such case OpenWhisk came super handy when needing to process forms and other backend processing. The [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/)  uses OpenWhisk to process forms and other backend processing, with that in place, there is no need to manage any backend.
 
-![](./readMe-images/email.png)   
+_Note: the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) site is a well-maintained, centralized, curated collection of open sample applications built using Bluemix and Bluemix services.
+The source code for this example is taken from the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) page, be sure to check it out for finding great featured samples._
+
+
 
 Built using the IBM Bluemix, the application uses:
 - IBM Bluemix OpenWhisk to host the API 
 - Angulrs.js for frontend  
 - SendGrid mail client 
 **No runtime to deploy, no server to manage**
+![](./readMe-images/email.png)   
+
 
 ## Application Requirements
 - IBM Bluemix account. [Sign up](https://console.ng.bluemix.net/registration/?target=%2Fdashboard%2Fapps) for Bluemix, or use an existing account.
