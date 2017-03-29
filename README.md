@@ -51,17 +51,17 @@ Built using the IBM Bluemix, the application uses:
       ```
   7. Create an action called mailAction from the action.js source file
       ```
-        $ wsk action create mailAction action.js
+        $ wsk action create OpenWhiskContact action.js
       ```      
   8. Expose the action created "mailAction" as an API and keep note of the API endpoint you get in the terminal 
       ```
-        $ wsk api-experimental create /api/v1 /mailAction post mailAction --annotation web-export true
+        $ wsk api-experimental create /OpenWhiskContact /api/v1 post OpenWhiskContact --annotation web-export true
       ``` 
   9. Add your OpenWhisk API from step 8 to the requestController.js file located in /app/controllers/requestController.js
       ```
          var API_URL = 'Your OpenWhisk API';
       ``` 
-      Here is an example of a OpenWhisk API: `https://b4651037-d05a-4b7d-ab46-1e9a1abc096f-gws.api-gw.mybluemix.net/mailAction/api`
+      Here is an example of a OpenWhisk API: `https://b4651037-d05a-4b7d-ab46-1e9a1abc096f-gws.api-gw.mybluemix.net/OpenWhiskContact/api/v1`
     
   10. Done, with that in place, you should be ready to go to host the code on GitHub.
   11. Commit the code to GitHub
@@ -71,12 +71,27 @@ Built using the IBM Bluemix, the application uses:
    **Done, see the running application on GitHub:**  
    [https://ibm-bluemix.github.io/OpenWhiskContact/](https://ibm-bluemix.github.io/OpenWhiskContact/)
 
+## Useful OpenWhisk Commands
+| Commands | Description |
+| ---- | ----------- |
+|[$ wsk --help]()| Wsk help to find available commands |
+|[$ wsk activation poll]()| Useful for troubleshooting to view logs and errors  |
+|[$ wsk action create 'Action_Name' 'Action_File']()| To create OpenWhisk action |
+|[$ wsk action list]()| list all OpenWhisk actions |
+|[$ wsk api-experimental create /'Api_Name' /'Api_Path' post 'Action_Name']()| Expose action as a API  |
+|[$ wsk api-experimental list]()| List all API's |
+
+
+
+
 ## Code Structure
 
-| File | Description |
+| Source Files | Description |
 | ---- | ----------- |
 |[**action.js**](OpenWhiskAction/action.js)| Create OpenWhisk using SendGrid |
 |[**requestController.js**](app/controllers/requestController.js)| Angular controller, making a post request to the OpenWhisk endpoint api, passing all the form data. |
+|[**app.js**](app/app.js)| Angular entry point, loading angular modules {ui.bootstrap} {ui.bootstrap.modal} {ngSanitize} {ngDialog} {ngMessages} |
+
 
 ## License
 
