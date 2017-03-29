@@ -1,7 +1,7 @@
 angular.module('ngWhisk')
     .controller('requestController', function($scope, $http, $log, $rootScope, ngDialog) {
         $log.log('inside');
-        var API_URL = 'https://b4651037-d05a-4b7d-ab46-1e9a1abc096f-gws.api-gw.mybluemix.net/mailAction/api'; // OpenWhisk exposed API
+        var API_URL = 'https://b4651037-d05a-4b7d-ab46-1e9a1abc096f-gws.api-gw.mybluemix.net/OpenWhiskContact/api/v1'; // OpenWhisk exposed API
         $scope.emailSent = false; // setting message logic to false not display any message by default
 
         $scope.sendMail = function () { //The send button will call this method to make an API to a OpenWhisk Action exposed as a API

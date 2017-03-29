@@ -5,7 +5,7 @@ let SG_KEY = 'ADD SendGrid API Here'; //SendGrid API Key
 let to_email = new helper.Email('your-email@gmail.com'); //Add your email here
 
 function main(params) {
-    let subject = `GitHub.io Request FROM: ${params["myName"]}`;
+    let subject = `OpenWhiskContact FROM: ${params["myName"]}`;
     let from_email = new helper.Email(`${params["myEmail"]}`);
 
     // Content with full information
