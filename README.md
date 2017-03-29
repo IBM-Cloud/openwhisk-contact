@@ -1,4 +1,4 @@
-# Process forms with OpenWhisk
+# Process forms with IBM Bluemix OpenWhisk
 
 The OpenWhiskContact application is a simple Angular.js form processing app that shows how a form can be processed without the need of any backend, this is by using the [IBM OpenWhisk](http://openwhisk.org/) Serverless architecture where an action is created then exposed as an API and then used in the Angular app.
 
