@@ -1,13 +1,16 @@
 # Process forms with OpenWhisk
-The OpenWhiskContact application is a simple Angular.js form processing app, it demonstrates how a form can be processed without the need of any backend, this is by using the [IBM OpenWhisk](http://openwhisk.org/) Serverless architecture. 
 
-The UI is done using Angular.js, the Angular UI comes with some cool features that can be reused like popups, messages, and validations. The Angular app is responsible for taken the user data from the simple form, then make a POST request to the OpenWhisk API on Bluemix. With using OpenWhisk, we created a simple action where it takes the user data passed and then sent the email using SendGrid mail client. The OpenWhisk action is then exposed as a RESTful API to allow the Angular app to talk too. With OpenWhisk you can easily create actions that handle individual or multiple tasks and then expose it as a RESTful API. 
+The OpenWhiskContact application is a simple Angular.js form processing app that shows how a form can be processed without the need of any backend, this is by using the [IBM OpenWhisk](http://openwhisk.org/) Serverless architecture where an action is created then exposed as an API and then used in the Angular app.
 
+The Angular app has some cool features out of the box, things like popups, messages, and validations, all in which can be reused. The Angular app is responsible for taken the user data, then make a POST request to the OpenWhisk API on Bluemix.
 
+On the other side, OpenWhisk action is created to handle the request and process the form by using SendGrid email client to send the emails, this shows how easily actions can be created and used. 
 ![](./readMe-images/app.png)  
 
 
-For many JavaScript heavy applications, OpenWhisk can be super efficient and beneficial to use, a good example of this would be the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) page.  The [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) page is a simple Angular app hosted on GitHub where there is no access to the backend, in such case OpenWhisk came super handy when needing to process forms and other backend processing. The [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/)  uses OpenWhisk to process forms and other backend processing, with that in place, there is no need to manage any backend.
+See live running link here: [https://ibm-bluemix.github.io/OpenWhiskContact/](https://ibm-bluemix.github.io/OpenWhiskContact/)
+
+For many JavaScript heavy applications, OpenWhisk can be super efficient and beneficial to use for many reasons, a good example of this would be the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) page, the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) page is a simple Angular app hosted on GitHub where there is no backend, in such case OpenWhisk can be super handy when needing to process forms and other backend processing. instead of having the backend running at all time for just processing some forms when needed, with OpenWhisk the action is only fired when needs to be fired, this means that we don't need the backend to run when it shouldn't, this can save both costing and overhead of server management. 
 
 _Note: the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) site is a well-maintained, centralized, curated collection of open sample applications built using Bluemix and Bluemix services.
 The source code for this example is taken from the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) page, be sure to check it out for finding great featured samples._
@@ -17,7 +20,8 @@ The source code for this example is taken from the [IBM-Bluemix GitHub.io](https
 Built using the IBM Bluemix, the application uses:
 - IBM Bluemix OpenWhisk to host the API 
 - Angulrs.js for frontend  
-- SendGrid mail client 
+- SendGrid mail client  
+
 **No runtime to deploy, no server to manage**
 ![](./readMe-images/email.png)   
 
@@ -31,9 +35,9 @@ Built using the IBM Bluemix, the application uses:
 
   1. Clone or fork the repository 
 
-  2. Checkout the code
+  2. Check out the code
 
-  3. Ensure your [OpenWhisk command line interface](https://console.ng.bluemix.net/openwhisk/cli) is property configured with:
+  3. Ensure your [OpenWhisk command line interface](https://console.ng.bluemix.net/openwhisk/cli) is properly configured with:
 
   ```
   wsk list
@@ -77,12 +81,12 @@ Built using the IBM Bluemix, the application uses:
 ## Useful OpenWhisk Commands
 | Commands | Description |
 | ---- | ----------- |
-|[$ wsk --help]()| Wsk help to find available commands |
-|[$ wsk activation poll]()| Useful for troubleshooting to view logs and errors  |
-|[$ wsk action create 'Action_Name' 'Action_File']()| To create OpenWhisk action |
-|[$ wsk action list]()| list all OpenWhisk actions |
-|[$ wsk api-experimental create /'Api_Name' /'Api_Path' post 'Action_Name']()| Expose action as a API  |
-|[$ wsk api-experimental list]()| List all API's |
+|$ wsk --help| Wsk help to find available commands |
+|$ wsk activation poll| Useful for troubleshooting to view logs and errors  |
+|$ wsk action create 'Action_Name' 'Action_File'| To create OpenWhisk action |
+|$ wsk action list| list all OpenWhisk actions |
+|$ wsk api-experimental create /'Api_Name' /'Api_Path' post 'Action_Name'| Expose action as a API  |
+|$ wsk api-experimental list| List all API's |
 
 
 
