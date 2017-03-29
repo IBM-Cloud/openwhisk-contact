@@ -4,7 +4,7 @@ body {
 
 }
 .header-container {
-  padding: 0 4rem;
+  padding: 0 1rem;
 }
 
 .header-panel.shadow-z-2 {
@@ -116,7 +116,7 @@ body .container .jumbotron-primary, body .container .well-primary, body .contain
 .page-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 1rem;
   text-align: center;
 }
 
