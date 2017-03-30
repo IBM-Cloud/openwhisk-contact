@@ -7,6 +7,9 @@ The Angular app has some cool features out of the box, things like popups, messa
 On the other side, OpenWhisk action is created to handle the request and process the form by using SendGrid email client to send the emails, this shows how easily actions can be created and used. 
 ![](./readMe-images/app.png)  
 
+![](./readMe-images/email.png)   
+
+
 
 See live running link here: [https://ibm-bluemix.github.io/OpenWhiskContact/](https://ibm-bluemix.github.io/OpenWhiskContact/)
 
@@ -23,7 +26,7 @@ Built using the IBM Bluemix, the application uses:
 - SendGrid mail client  
 
 **No runtime to deploy, no server to manage**
-![](./readMe-images/email.png)   
+![](./readMe-images/diag.png)   
 
 
 ## Application Requirements
