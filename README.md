@@ -26,13 +26,15 @@ Built using the IBM Bluemix, the application uses:
 - SendGrid mail client  
 
 **No runtime to deploy, no server to manage**
-![](./readMe-images/diag.png)   
 
 
 ## Application Requirements
 - IBM Bluemix account. [Sign up](https://console.ng.bluemix.net/registration/?target=%2Fdashboard%2Fapps) for Bluemix, or use an existing account.
 - [SendGrid](https://sendgrid.com/) email client, sign up for free and get your token  
 - GitHub Pages to host the frontend
+
+![](./readMe-images/diag.png)   
+
 
 ## Running the app on top of GitHub Pages and OpenWhisk
 
