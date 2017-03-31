@@ -4,7 +4,7 @@ The OpenWhiskContact application is a simple Angular.js form processing app that
 
 The Angular app has some cool features out of the box, things like popups, messages, and validations, all in which can be reused. The Angular app is responsible for taken the user data, then make a POST request to the OpenWhisk API on Bluemix.
 
-On the other side, OpenWhisk action is created to handle the request and process the form by using SendGrid email client to send the emails, this shows how easily actions can be created and used. 
+On the other side, OpenWhisk action is created to handle the request and process the form by using SendGrid email api to send the emails, this shows how easily actions can be created and used. 
 ![](./readMe-images/app.png)  
 
 ![](./readMe-images/email.png)   
@@ -23,14 +23,14 @@ The source code for this example is taken from the [IBM-Bluemix GitHub.io](https
 Built using the IBM Bluemix, the application uses:
 - IBM Bluemix OpenWhisk to host the API 
 - Angulrs.js for frontend  
-- SendGrid mail client  
+- SendGrid email api  
 
 **No runtime to deploy, no server to manage**
 
 
 ## Application Requirements
 - IBM Bluemix account. [Sign up](https://console.ng.bluemix.net/registration/?target=%2Fdashboard%2Fapps) for Bluemix, or use an existing account.
-- [SendGrid](https://sendgrid.com/) email client, sign up for free and get your token  
+- [SendGrid](https://sendgrid.com/) email api, sign up for free and get your api key  
 - GitHub Pages to host the frontend
 
 ![](./readMe-images/diag.png)   
@@ -51,7 +51,7 @@ Built using the IBM Bluemix, the application uses:
   This shows the packages, actions, triggers and rules currently deployed in your OpenWhisk namespace.
   
   
-  4. Create an Email API using [SendGrid](https://sendgrid.com/) or any other mail client, using [SendGrid](https://sendgrid.com/) you can get free API to send up to 40k emails.
+  4. Create an Email API using [SendGrid](https://sendgrid.com/) or any other mail api you want to use, using [SendGrid](https://sendgrid.com/) you can get free API to send up to 40k emails.
   5. Edit the OpenWhiskAction/action.js file, add your SendGrid API key and your email address to which you want to receive the emails. Save the file, next we will create the OpenWhisk Action.
       ```
       let SG_KEY = 'ADD SendGrid API Here'; //SendGrid API Key
