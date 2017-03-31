@@ -107,7 +107,7 @@ Built using the IBM Bluemix, the application uses:
 
 ## License
 
-See [LICENSE](LICENSE) for license information.
+See [License.txt](License.txt) for license information.
 
 ---
 
