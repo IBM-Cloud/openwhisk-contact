@@ -52,14 +52,15 @@
 
     <!-- Loading the view -->
     <div class="page-container">
-        <h2>OpenWhisk Forms</h2>
-        <p>Process contact form without a backend using <a href="http://openwhisk.org/" target="_blank">IBM OpenWhisk</a></p><br><br><br>
-        <h4>How it works?</h4>
+        <h2>OpenWhisk Form Processing</h2>
+        <p>Process a contact form without the need of a backend with using <a href="https://console.ng.bluemix.net/openwhisk/" target="_blank">IBM Bluemix OpenWhisk</a></p><br><br><br>
+        <h4>Built using the IBM Bluemix, the application uses:</h4>
         <p>
-            { Angular app making a post request to send the form details } <br>
-            { OpenWhisk action to process the email using <a href="https://sendgrid.com/" target="_blank">SendGrid mail client</a> } <br>
-            { Expose the OpenWhisk action as an API, Done! } <br>
+            IBM Bluemix OpenWhisk to host the API<br>
+            Angulrs.js app hosted on GitHub<br>
+            <a href="https://sendgrid.com/" target="_blank">SendGrid</a> Email API<br>
         </p>
+
         <button type="button" ng-dialog="firstDialogId" ng-dialog-controller="InsideCtrl" ng-dialog-data="{{jsonData}}"
                 ng-dialog-class="ngdialog-theme-default" ng-dialog-show-close="false">Submit Your Feedback
         </button><br><br><br><br><br><br>
