@@ -11,7 +11,7 @@ On the other side, OpenWhisk action is created to handle the request and process
 
 
 
-See live running link here: [https://ibm-bluemix.github.io/OpenWhiskContact/](https://ibm-bluemix.github.io/OpenWhiskContact/)
+See live running link here: [https://ibm-bluemix.github.io/openwhisk-contact/](https://ibm-bluemix.github.io/openwhisk-contact/)
 
 For many JavaScript heavy applications, OpenWhisk can be super efficient and beneficial to use for many reasons, a good example of this would be the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) page, the [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) page is a simple Angular app hosted on GitHub where there is no backend, in such case OpenWhisk can be super handy when needing to process forms and other backend processing. instead of having the backend running at all time for just processing some forms when needed, with OpenWhisk the action is only fired when needs to be fired, this means that we don't need the backend to run when it shouldn't, this can save both costing and overhead of server management. 
 
@@ -81,7 +81,7 @@ Built using the IBM Bluemix, the application uses:
       ![](readMe-images/githubFull.png) 
   
    **Done, see the running application on GitHub:**  
-   [https://ibm-bluemix.github.io/OpenWhiskContact/](https://ibm-bluemix.github.io/OpenWhiskContact/)
+   [https://ibm-bluemix.github.io/openwhisk-contact/](https://ibm-bluemix.github.io/openwhisk-contact/)
 
 ## Useful OpenWhisk Commands
 | Commands | Description |
