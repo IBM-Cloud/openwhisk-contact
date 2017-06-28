@@ -30,7 +30,7 @@ Built using the IBM Bluemix, the application uses:
 
 ## Application Requirements
 - IBM Bluemix account. [Sign up](https://console.ng.bluemix.net/registration/?target=%2Fdashboard%2Fapps) for Bluemix, or use an existing account.
-- [SendGrid](https://sendgrid.com/) email api, sign up for free and get your api key  
+- [SendGrid](https://sendgrid.com/) email api, sign up for free 30 day trial and get your api key  
 - GitHub Pages to host the frontend
 
 ![](./readMe-images/diag.png)   
@@ -51,7 +51,7 @@ Built using the IBM Bluemix, the application uses:
   This shows the packages, actions, triggers and rules currently deployed in your OpenWhisk namespace.
   
   
-  4. Create an Email API using [SendGrid](https://sendgrid.com/) or any other mail api you want to use, using [SendGrid](https://sendgrid.com/) you can get free API to send up to 40k emails.
+  4. Create an Email API using [SendGrid](https://sendgrid.com/) or any other mail api you want to use, using [SendGrid](https://sendgrid.com/) you can get 30 day free trial API to send up to 40k emails.
   5. Edit the OpenWhiskAction/action.js file, add your SendGrid API key and your email address to which you want to receive the emails. Save the file, next we will create the OpenWhisk Action.
       ```
       let SG_KEY = 'ADD SendGrid API Here'; //SendGrid API Key
